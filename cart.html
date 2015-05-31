@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glenwood Shopping Cart</title> <!--requirement 3-->
+	<meta charset="UTF-8"/>  <!--requirement 12-->
+	<link rel = "stylesheet" type = "text/css" href = "Main.css">
+  <!-- // <SCRIPT TYPE="text/javascript" SRC="backlink.js"></SCRIPT> -->
+
+	
+	<style type="text/css">
+    /*@import url(http://fonts.googleapis.com/css?family=Indie+Flower);*/
+
+	li{
+      list-style-type: none;
+      display: inline;
+    }
+    table{
+    	border-collapse: collapse;
+    	margin-bottom: 20px;
+    }
+    th{
+    	padding: 8px 20px;
+    	padding-right: 56px;
+    	font-weight: normal;
+    	color: #727a61;
+    	border: none;
+    	text-align: left;
+    }
+	td{
+		color: #727a61;
+		padding-left: 20px;
+	}
+	tr{
+		border: none;
+		border-bottom: 1px solid lightgrey;
+	}
+    .heading{
+		background-color: lightgrey;
+		padding: 8px 0;
+		border-bottom: none;
+    }
+    .shipping{
+    	width: 225px;
+    }
+    .item{
+      display: block;
+      width: 324px;
+    }
+    .item a{
+      height: 100%;
+    }
+    .pic{
+      padding: 10px;
+      float: left;
+    }
+    .description{
+      float: left;
+      padding: 40px;
+      padding-left: 40px;
+      width: 60px;
+      color: #727a62;
+    }
+    .price{
+		width: 101px;
+    }
+    .quantity{
+      width: 170px;
+    }
+    .totals tr{
+    	border-bottom: none;
+    }
+    .totals td.shipping{
+    	width: 340px;
+    }
+    .totals td.quantity{
+    	width: 220px;
+    }
+	.totals td{
+		padding-bottom: 10px;
+	}
+	td.net-total{
+		font-weight: bold;
+	}
+	td.grand-total{
+		font-size: 18px;
+		border-top: 1px solid #727a61;
+	}
+	</style>
+</head>
+
+<body>
+  <div id="body_style">
+    <header>  <!--start of top banner-->
+      <div id="logo">
+        <p>Glenwood Furniture</p>
+      </div>
+			<div id="slogan">
+        <p>Furniture for Everyday Living</p>
+      </div>
+			<a href="index.html"><div id="transparent"></div></a>
+    </header>  <!-- end of top banner-->
+
+    <nav class ="top-menu">
+      <ul>
+		<li><a href="index.html">Home</a></li>
+        <li><a href="dining.html">Kitchen/Dining</a></li>
+        <li><a href="bedroom.html">Bedroom Furniture</a></li>
+        <li><a href="office.html">Occassional</a></li>
+		<li><a href="contract.html">Contract Furniture</a></li>
+      </ul>
+	</nav>
+
+	<div class="button"><a href="checkout.html">Checkout Now</a></div>
+	<div class="button"><a href="index.html">Keep Shopping</a></div>
+	
+	<hr>
+
+	<table class="purchased-items">
+		<tr class="heading">
+			<th class="item">Item:</th>
+			<th class="shipping">Shipping:</th>
+			<th class="quantity">Quantity:</th>
+			<th class="price">Price:</th>
+		</tr>
+		<tr>
+			<td class="item"><img class="pic" src="images/thumbnails/Berkeley-Desk-150x150.jpg" alt="Berkeley Desk" height="100" width="100">
+				<div class="description">Berkeley Desk</div>
+			</td>
+			<td class="shipping">Delivered in 2 business days</td>
+			<td class="quantity">1</td>
+			<td class="price">€100.00</td>
+		</tr>
+		<tr>
+			<td class="item"><img class="pic" src="images\thumbnails\Corrib-Bookcase-150x150.jpg" alt="Corrib Bookcase" height="100" width="100">
+				<div class="description">Corrib Bookcase</div>
+			</td>
+			<td class="shipping">Delivered in 2 business days</td>
+			<td class="quantity">1</td>
+			<td class="price">€200.00</td>
+		</tr>
+	</table>
+	<table class="totals">
+		<tr>
+			<td class="item">Got a question? Call us at 1800 123 4567</td>
+			<td class="shipping"></td>
+			<td class="quantity">Product Total:</td>
+			<td class="price net-total">€300.00</td>
+		</tr>
+		<tr>
+			<td class="item"></td>
+			<td class="shipping"></td>
+			<td class="quantity">Estimated Shipping:</td>
+			<td class="price net-total">Free!</td>
+		</tr>
+		<tr>
+			<td class="item"></td>
+			<td class="shipping"></td>
+			<td class="quantity">Estimated Total:</td>
+			<td class="price grand-total">€300.00</td>
+		</tr>
+	</table>
+	<div class="button"><a href="checkout.html">Checkout Now</a></div>
+	<div class="button"><a href="shop.html">Keep Shopping</a></div>
+	
+
+   
+    <footer>
+		<address>
+			<p>For more information contact
+			<a href = "mailto:info@glenwoodfurniture.ie">Glenwood email</a></p>
+        <p>All content copyright &copy; Glenwood Furniture Limited 2015</p>
+		</address>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

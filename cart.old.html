@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glenwood Shopping Cart</title> <!--requirement 3-->
+	<meta charset="UTF-8"/>  <!--requirement 12-->
+	<link rel = "stylesheet" type = "text/css" href = "Main.css">
+  <SCRIPT TYPE="text/javascript" SRC="backlink.js"></SCRIPT>
+
+	
+	<style type="text/css">
+    @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+		li{
+      list-style-type: none;
+      display: inline;
+    }
+    li.add-to-cart{
+      width: 100px;
+    }
+    .heading{
+
+    }
+    .purchased{
+      float: left;
+      width: 1060px;
+      padding: 20px;
+      margin-right: 20px;
+    }
+    .item{
+      display: block;
+      width: 600px;
+      height: 200px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+      float: left;
+    }
+    .item a{
+      height: 100%;
+    }
+    .pic{
+      padding: 10px;
+      float: left;
+    }
+    .description{
+      float: left;
+      padding: 40px;
+      padding-left: 100px;
+      width: 60px;
+      color: #727a62;
+    }
+    .price-each{
+      padding: 40px;
+      float: right;
+      color: #727a62;
+    }
+    .add-to-cart{
+      position: relative;
+      top: 160px;
+      left: 100px;
+      background-color: red;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .add-to-cart:hover{
+      opacity: 0.5;
+    }
+    .add-to-cart a{
+      color: white;
+    }
+    .quantity{
+      width: 40px;
+      height: 40px;
+      border: 1px solid black;
+      float: left;
+      margin-top: 70px;
+      margin-left: 140px;
+    }
+    .price-total{
+      width: 100px;
+      height: 40px;
+      border: 1px solid black;
+      float: right;
+      margin-top: 70px;
+      margin-left: 60px;
+      color: #727a62;
+    }
+	</style>
+</head>
+
+<body>
+  <div id="body_style">
+    <header>  <!--start of top banner-->
+      <div id="logo">
+        <p>Glenwood Furniture</p>
+      </div>
+			<div id="slogan">
+        <p>Furniture for Everyday Living</p>
+      </div>
+			<a href="index.html"><div id="transparent"></div></a>
+    </header>  <!-- end of top banner-->
+
+    <nav class ="top-menu">
+      <ul>
+		<li><a href="index.html">Home</a></li>
+        <li><a href="dining.html">Kitchen/Dining</a></li>
+        <li><a href="bedroom.html">Bedroom Furniture</a></li>
+        <li><a href="office.html">Occassional</a></li>
+		<li><a href="contract.html">Contract Furniture</a></li>
+      </ul>
+	</nav>
+
+	<div class="button"><a href="checkout.html">Checkout</a></div>
+	<div class="button"><a href="shop.html">Keep Shopping</a></div>
+	
+	<hr>
+
+    <ul class="heading">
+      <li>Item</li>
+      <li>Shipping</li>
+      <li>Quantity</li>
+      <li>Price</li>
+    </ul>
+    <ul class="purchased">
+      <ul class="item">
+        <li class="pic"><a href="images\LowRes\Office\Berkeley Desk.jpg"><img src="images/thumbnails/Berkeley-Desk-150x150.jpg" alt="Berkeley Desk" height="150" width="150"></a></li>
+        <li class="description">Berkeley Desk</li>
+      </ul>
+      <div class="quantity"></div>
+      <div class="price-total"></div>
+      <ul class="item">
+        <li class="pic"><a href="images\LowRes\Office\Corrib Bookcase.jpg"><img src="images\thumbnails\Corrib-Bookcase-150x150.jpg" alt="Corrib Bookcase" height="150" width="150"></a></li>
+        <li class="description">Corrib Bookcase</li>
+      </ul>
+      <div class="quantity"></div>
+      <div class="price-total"></div>
+    </ul>
+	
+    <footer>
+		<address>
+			<p>For more information contact
+			<a href = "mailto:info@glenwoodfurniture.ie">Glenwood email</a></p>
+        <p>All content copyright &copy; Glenwood Furniture Limited 2015</p>
+		</address>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

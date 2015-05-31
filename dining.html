@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glenwood Furniture</title> <!--requirement 3-->
+	<meta charset="UTF-8"/>  <!--requirement 12-->
+	<link rel = "stylesheet" type = "text/css" href = "Main.css">
+	<style>
+	
+	         #thumbnails{
+			 float: left;
+             margin: 0 2%;
+             width: 30%px;	
+			 background: #727a61;
+			 padding:25px;
+             
+			 
+			 }
+			 
+			 #preview{
+		   	float: left;
+            margin: 0 1.5%;
+             width: 60%;
+			 }
+			 
+			 
+			 h6{
+	         font-size: 15pt;
+	         color: white;
+	        }
+	
+	         #list{
+	         color:white;
+	         font-size: 14pt;
+	         }
+			 
+	       
+			ul.item{
+			display: block;
+			width: 600px;
+			height: 200px;
+			border: 1px solid black;
+			margin-bottom: 20px;
+			}
+			
+			
+			
+		.pic{
+			padding: 10px;
+			float: left;
+		}
+		.description{
+			float: left;
+			padding: 40px;
+			width: 60px;
+		}
+		.price{
+			padding: 40px;
+			float: right;
+		}
+		
+		
+		.add-to-cart{
+			position: relative;
+			top: 160px;
+			left: 100px;
+			background-color: red;
+			padding: 10px;
+			border-radius: 10px;
+			
+		}
+		.add-to-cart:hover{
+			opacity: 0.5;
+		}
+		.add-to-cart a{
+			color: white;
+		}
+			
+			
+	     li{
+	       list-style-type: none;
+			display: inline;
+		}
+		
+		
+		li.add-to-cart{
+			width: 100px;
+		}
+
+				
+				#addToBasket{
+				
+	          color:#08233e;
+              font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+              font-size:16pt;
+              padding:10px;
+              margin: 25px;
+			 
+				}
+				
+				
+				
+				
+				
+	
+	</style>
+
+</head>
+
+<body>
+  <div id="body_style">
+    <header>  <!--start of top banner-->
+      <div id="logo">
+        <p>Glenwood Furniture</p>
+      </div>
+			<div id="slogan">
+        <p>Furniture for Everyday Living</p>
+      </div>
+	  <a href="index.html"><div id="transparent"></div></a>
+    </header>  <!-- end of top banner-->
+
+    <nav class ="top-menu">
+      <ul>
+		<li><a href="dining.html">Browse our Collections</a></li>
+        <li><a href="dining.html">Kitchen/Dining</a></li>
+        <li><a href="bedroom.html">Bedroom Furniture</a></li>
+        <li><a href="office.html">Occassional</a></li>
+		<li><a href="contract.html">Contract Furniture</a></li>
+      </ul>
+	</nav>
+
+	<div class="button"><a href="checkout.html">Checkout</a></div>
+	<div class="button"><a href="shop-select.html">Shop</a></div>
+	
+	<hr>
+	
+	   
+		 
+		 
+		      
+ <section id= "thumbnails" >
+ 
+ <form id="tfnewsearch" method="get" action="http://www.google.com">
+
+		        <input type="text" class="tftextinput" name="q" size="21" maxlength="120">
+				<input type="submit" value="search" class="tfbutton">
+		</form>
+			  
+			  
+<form name="RefineSearch" >
+
+ <h6> CATAGORIES </h6>
+ 
+ <p id = "list">
+
+ <input type="checkbox" name="sports" value="Kitchen"  /> Sofa's and Sofa Beds <br />
+
+ <input type="checkbox" name="sports" value="Dining"  />  Chairs and Seating <br /> 
+
+ <input type="checkbox" name="sports" value="Bedroom"  />Tables <br /> 
+
+ <input type="checkbox" name="sports" value="Patio"  />Entertainment Units <br>
+
+ <input type="checkbox" name="sports" value="Kitchen"  /> Bookcases <br />
+
+ </p>
+
+ <h6> STYLE </h6>
+ <p id = "list">
+ <input type="checkbox" name="sports" value="Dining"  />Traditional<br /> 
+
+ <input type="checkbox" name="sports" value="Bedroom"  />Contemporary<br /> 
+
+ <input type="checkbox" name="sports" value="Patio"  /> Modern <br>
+ 
+ <input type="checkbox" name="sports" value="Bedroom"  />Rustic<br /> 
+ 
+<h6> PRICE RANGE </h6>
+ <p id = "list">
+ <input type="checkbox" name="sports" value="Dining"  />$100 - $250 <br /> 
+
+ <input type="checkbox" name="sports" value="Bedroom"  />$250 - $500 <br /> 
+
+ <input type="checkbox" name="sports" value="Patio"  /> $500 - $750 <br>
+ 
+ <input type="checkbox" name="sports" value="Bedroom"  />$750 - $1000 <br /> 
+ 
+ <input type="checkbox" name="sports" value="Bedroom"  />Over $1000 <br /> 
+ </p>
+ <h6> UPHOLSTRY </h6>
+ <p id = "list">
+ <input type="checkbox" name="sports" value="Dining"  />Leather<br /> 
+
+ <input type="checkbox" name="sports" value="Bedroom"  />Faux Leather<br /> 
+
+ <input type="checkbox" name="sports" value="Patio"  /> Fabric <br>
+ 
+ </p>
+ 
+
+</form>
+			  	  
+			  </section>
+			  
+			  <section id = "preview">
+			  
+			  <div id ="items"> 
+
+    <ul class="for-sale">
+    	<ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Tables\Classic 3ft Pedestal Table186.jpg"><img src="images\LowRes\Tables\thumbnails\Classic-3ft-Pedestal-Table186.jpg" alt="Classic 3 foot Pedestal Table" height="150" width="150"></a></li>
+	    	<li class="description">Classic 3 foot Pedestal Table</li>
+	    	<li class="price">€15.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Tables\Classic 3ft Square table.jpg"><img src="images\LowRes\Tables\thumbnails\Classic-3ft-Square-table.jpg" alt="Classic 3 foot Square Table" height="150" width="150"></a></li>
+	    	<li class="description">Classic 3 foot Square Table</li>
+	    	<li class="price">€25.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Tables\Classic 4ft Oval.jpg"><img src="images\LowRes\Tables\thumbnails\Classic-4ft-Oval.jpg" alt"Classic 4 foot Oval Table" height="150" width="150"></a></li>
+	    	<li class="description">Classic 4 foot Oval Table</li>
+	    	<li class="price">€35.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Tables\Classic 5ft Oval .jpg"><img src="images\LowRes\Tables\thumbnails\Classic-5ft-Oval-.jpg" alt="Classic 5 foot Oval Table" height="150" width="150"></a></li>
+	    	<li class="description">Classic 5 foot Oval Table</li>
+	    	<li class="price">€45.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Tables\Classic 5ft rect.jpg"><img src="images\LowRes\Tables\thumbnails\Classic-5ft-rect.jpg" alt="Classic 5 foot Rectangle Table" height="150" width="150"></a></li>
+	    	<li class="description">Classic 5 foot Rectangle Table</li>
+	    	<li class="price">€55.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    
+
+    </ul>
+			  
+			  </section>
+			  
+			  
+			  
+		 
+		 
+    <footer>
+		<address>
+			<p>For more information contact
+			<a href = "mailto:info@glenwoodfurniture.ie">Glenwood email</a></p>
+        <p>All content copyright &copy; Glenwood Furniture Limited 2015</p>
+		</address>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

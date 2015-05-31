@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glenwood Checkout</title> <!--requirement 3-->
+	<meta charset="UTF-8"/>  <!--requirement 12-->
+	<link rel = "stylesheet" type = "text/css" href = "Main.css">
+
+	
+	<style type="text/css">
+    .checkout ul{
+      padding-top: 20px;
+      padding-left: 40px;
+      margin-bottom:10px;
+    }
+    .checkout li{
+      display: inline;
+    }
+    .checkout li:first-child{
+      padding-left: 20px;
+      border-bottom: 1px solid white;
+      z-index: 1;
+    }
+    .checkout a{
+      margin: 0;
+      padding: 0;
+      color: #727a61;
+      font-size: 150%;
+      padding: 10px;
+      border: 1px solid #727a61;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    #login a{
+      color: white;
+      background-color: #727a61;
+    }
+    .checkout a:hover{
+      color: white;
+      background-color: #727a61;
+    }
+     .box{
+      width: 1000px;
+      height: 500px;
+      border: 1px solid #727a61;
+      margin-left: 60px;
+      z-index: -1;
+    }
+    .box p{
+      font-size: 36px;
+      color: blue;
+      text-align: center;
+    }
+    
+	</style>
+</head>
+
+<body>
+  <div id="body_style">
+    <header>  <!--start of top banner-->
+      <div id="logo">
+        <p>Glenwood Furniture</p>
+      </div>
+			<div id="slogan">
+        <p>Furniture for Everyday Living</p>
+      </div>
+			<a href="index.html"><div id="transparent"></div></a>
+    </header>  <!-- end of top banner-->
+
+    <nav class ="top-menu">
+      <ul>
+		<li><a href="index.html">Home</a></li>
+        <li><a href="dining.html">Kitchen/Dining</a></li>
+        <li><a href="bedroom.html">Bedroom Furniture</a></li>
+        <li><a href="office.html">Occassional</a></li>
+		<li><a href="contract.html">Contract Furniture</a></li>
+      </ul>
+	</nav>
+
+  <div class="button"><a href="checkout.html">Checkout</a></div>
+	<div class="button"><a href="index.html">Keep Shopping</a></div>
+	
+	<hr>
+  <div class="checkout">
+    <ul>
+      <li id="login"><a href="checkout.html">1. Log In</a></li>
+      <li id="shipping"><a href="shipping.html">2. Shipping</a></li>
+      <li id="payment"><a href="payment.html">3. Payment</a></li>
+      <li id="review"><a href="review.html">4. Review</a></li>
+    </ul>
+  </div>
+  <div class="box">
+    <p>Login info goes here</p>    
+  </div>
+    <footer>
+		<address>
+			<p>For more information contact
+			<a href = "mailto:info@glenwoodfurniture.ie">Glenwood email</a></p>
+        <p>All content copyright &copy; Glenwood Furniture Limited 2015</p>
+		</address>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

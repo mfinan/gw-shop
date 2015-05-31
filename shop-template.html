@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glenwood Shop</title> <!--requirement 3-->
+	<meta charset="UTF-8"/>  <!--requirement 12-->
+	<link rel = "stylesheet" type = "text/css" href = "Main.css">
+	
+	<style type="text/css">
+		#left-menu{
+			margin-bottom: 50px;
+		}
+		li{
+			list-style-type: none;
+			display: inline;
+		}
+		li.add-to-cart{
+			width: 100px;
+		}
+		ul.for-sale{
+			float: right;
+			width: 800px;
+			padding: 20px;
+			margin-right: 20px;
+		}
+		ul.item{
+			display: block;
+			width: 600px;
+			height: 200px;
+			border: 1px solid black;
+			margin-bottom: 20px;
+		}
+		/*ul.item a{
+			width: 100%;
+		}*/
+		.item a{
+			height: 100%;
+		}
+		.pic{
+			padding: 10px;
+			float: left;
+		}
+		.description{
+			float: left;
+			padding: 40px;
+			width: 60px;
+		}
+		.price{
+			padding: 40px;
+			float: right;
+		}
+		.add-to-cart{
+			position: relative;
+			top: 160px;
+			left: 100px;
+			background-color: red;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		.add-to-cart:hover{
+			opacity: 0.5;
+		}
+		.add-to-cart a{
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+  <div id="body_style">
+    <header>  <!--start of top banner-->
+      <div id="logo">
+        <p>Glenwood Furniture</p>
+      </div>
+			<div id="slogan">
+        <p>Furniture for Everyday Living</p>
+      </div>
+	  <a href="index.html"><div id="transparent"></div></a>
+    </header>  <!-- end of top banner-->
+
+    <nav class ="top-menu">
+      <ul>
+		<li><a href="dining.html">Browse our Collections</a></li>
+        <li><a href="dining.html">Kitchen/Dining</a></li>
+        <li><a href="bedroom.html">Bedroom Furniture</a></li>
+        <li><a href="office.html">Occassional</a></li>
+		<li><a href="contract.html">Contract Furniture</a></li>
+      </ul>
+	</nav>
+
+	<div class="button"><a href="checkout.html">Checkout</a></div>
+	<div class="button"><a href="cart.html">Cart</a></div>
+	
+	<hr>
+
+    <nav id="left-menu">
+      <ul>
+		<li><a href="index.html">Home</a></li>  <!--requirement 10-->
+        <li><a href="products.html">Products</a></li>
+        <li><a href="retail.html">Retail</a></li>
+        <li><a href="contract.html">Contract</a></li>
+        <li><a href="brochure.html">Brochure</a></li>
+        <li><a href="contact.html">Contact</a></li>
+		<li><a href= "AssignmentRequirements.html">Extra</a></li>
+      </ul>
+    </nav>
+
+    <ul class="for-sale">
+    	<ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Office\Berkeley Desk.jpg"><img src="images/thumbnails/Berkeley-Desk-150x150.jpg" alt="Berkeley Desk" height="150" width="150"></a></li>
+	    	<li class="description">Berkeley Desk</li>
+	    	<li class="price">€15.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Office\Corrib Bookcase.jpg"><img src="images\thumbnails\Corrib-Bookcase-150x150.jpg" alt="Corrib Bookcase" height="150" width="150"></a></li>
+	    	<li class="description">Corrib Bookcase</li>
+	    	<li class="price">€25.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Office\Corrib Low bookcase.jpg"><img src="images\thumbnails\Corrib-Low-bookcase-150x150.jpg" alt"Corrib Low Bookcase" height="150" width="150"></a></li>
+	    	<li class="description">Corrib Low Bookcase</li>
+	    	<li class="price">€35.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Office\Sorbonne Desk.jpg"><img src="images\thumbnails\Sorbonne-Desk-150x150.jpg" alt="Sorbonne Desk" height="150" width="150"></a></li>
+	    	<li class="description">Sorbonne Desk</li>
+	    	<li class="price">€45.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    <ul class="item">
+	    	<li class="pic"><a href="images\LowRes\Office\Tiffany bookcase.jpg"><img src="images\thumbnails\Tiffany-bookcase-150x150.jpg" alt="Tiffany Bookcase" height="150" width="150"></a></li>
+	    	<li class="description">Tiffany Bookcase</li>
+	    	<li class="price">€55.00</li>
+	    	<li class="add-to-cart"><a href="js.html">Add to Cart</a></li>
+	    </ul>
+	    
+
+    </ul>
+	
+    <footer>
+		<address>
+			<p>For more information contact
+			<a href = "mailto:info@glenwoodfurniture.ie">Glenwood email</a></p>
+        <p>All content copyright &copy; Glenwood Furniture Limited 2015</p>
+		</address>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>

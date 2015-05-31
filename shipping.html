@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glenwood Checkout</title> <!--requirement 3-->
+  <meta charset="UTF-8"/>  <!--requirement 12-->
+  <link rel = "stylesheet" type = "text/css" href = "Main.css">
+
+  
+  <style type="text/css">
+    fieldset{
+      border: 0;
+    }
+    legend{
+      padding-bottom: 20px;
+    }
+    input{
+      width: 240px;
+      float: left;
+      padding: 4px 0;
+      margin-bottom: 12px;
+    }
+    input:first-child{
+      margin-top: 0;
+    }
+    .checkout ul{
+      padding-top: 20px;
+      padding-left: 40px;
+      margin-bottom:10px;
+    }
+    .checkout li{
+      display: inline;
+    }
+    .checkout li:first-child{
+      padding-left: 20px;
+      border-bottom: 1px solid white;
+      z-index: 1;
+    }
+    .checkout a{
+      margin: 0;
+      padding: 0;
+      color: #727a61;
+      font-size: 150%;
+      padding: 10px;
+      border: 1px solid #727a61;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    #shipping a{
+      color: white;
+      background-color: #727a61;
+    }
+    .checkout a:hover{
+      color: white;
+      background-color: #727a61;
+    }
+    .box{
+      width: 1000px;
+      height: 500px;
+      border: 1px solid #727a61;
+      margin-left: 60px;
+      z-index: -1;
+      padding: 10px;
+    }
+    .box>a.continue{
+      float: right;
+      margin-right:80px;
+      margin-top: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+    }
+    #delivery{
+      width: 480px;
+      margin: 0;
+      margin-top: 40px;
+      padding: 10px;
+      float: left;
+    }
+    #delivery>input{
+      border: 1px solid grey;
+    }
+    #delivery p{
+      padding-left: 5px;
+      font-size: 14px;
+      padding-top: 10px;
+    }
+    .label-side{
+      width: 120px;
+      display: block;
+      float: left;
+    }
+    label{
+      display: block;
+      margin: 20px 0;
+      border: 1px solid white;
+    }
+    label:first-child{
+      margin-top: 4px;
+    }
+    .input-side{
+      width: 260px;
+      float: right;
+      padding: 0;
+      margin-right: 40px;
+    }
+    .checkbox-text p{
+      width: 200px;
+      height: 60px;
+      margin: 0;
+    }
+    #commercial{
+      width: 20px;
+      clear: both;
+    }
+    #instructions{
+      width: 20px;
+
+    }
+    .checkboxes{
+      width: 20px;
+      height: 50px;
+      border: 1px solid blue;
+      clear: both;
+    }
+    #my-order{
+      width: 300px;
+      float: right;
+      margin-right: 80px;
+      margin-top: 50px;
+      padding: 10px;
+      border: 1px solid green;
+      background-color: lightgrey;
+    }
+    #my-order .continue{
+      font-size: 14px;
+      padding-right: 20px;
+    }
+    #my-order-top{
+      padding-bottom: 10px;
+      border-bottom: 1px solid green;
+    }
+    #my-order-top p{
+      margin: 0;
+      padding-right: 10px;
+      float: left;
+      font-weight: bold;
+    }
+    #my-order-top a{
+      font-size: 12px;
+      margin-left: 45px;
+    }
+    .continue{
+      color: white;
+      background-color: #727a61;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 40px;
+    }
+    #my-order-details{
+      font-size: 12px;
+      border-bottom: 1px solid green;
+    }
+    #my-order-total{
+      font-weight: bold;
+    }
+    #my-order-continue{
+      float: right;
+      margin-right: 90px;
+      padding-bottom: 100px;
+    }
+    #form-continue{
+      clear: both;
+      margin-left: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="body_style">
+    <header>  <!--start of top banner-->
+      <div id="logo">
+        <p>Glenwood Furniture</p>
+      </div>
+      <div id="slogan">
+        <p>Furniture for Everyday Living</p>
+      </div>
+      <a href="index.html"><div id="transparent"></div></a>
+    </header>  <!-- end of top banner-->
+
+    <nav class ="top-menu">
+      <ul>
+    <li><a href="index.html">Home</a></li>
+        <li><a href="dining.html">Kitchen/Dining</a></li>
+        <li><a href="bedroom.html">Bedroom Furniture</a></li>
+        <li><a href="office.html">Occassional</a></li>
+    <li><a href="contract.html">Contract Furniture</a></li>
+      </ul>
+  </nav>
+
+  <div class="button"><a href="checkout.html">Checkout</a></div>
+  <div class="button"><a href="index.html">Keep Shopping</a></div>
+  
+  <hr>
+  <div class="checkout">
+    <ul>
+      <li id="login"><a href="checkout.html">1. Log In</a></li>
+      <li id="shipping"><a href="shipping.html">2. Shipping</a></li>
+      <li id="payment"><a href="payment.html">3. Payment</a></li>
+      <li id="review"><a href="review.html">4. Review</a></li>
+    </ul>
+  </div>
+  <div class="box">
+        <form action= "" method= "">
+          <fieldset id= "delivery"> <legend>Enter Your Details:</legend>
+            <div class="label-side">
+              <label for= "customer">Full Name* </label>
+              <label for= "address1">Address 1* </label>
+              <label for= "address2">Address 2* </label>
+              <label for= "city">Town/City* </label>
+              <label for= "postcode">Postcode* </label>
+              <label for= "country">Country* </label>
+              <label for= "phone">Phone Number* </label>
+            </div>
+            <div class="input-side">
+              <input type= "text" name= "customer" id= "customer">
+              <input type= "text" id= "address1">
+              <input type= "text" id= "address2">
+              <input type= "text" id= "city">
+              <input type= "text" list= "country" name= "country" id= "country">
+              <input type= "text" id= "postcode">
+              <input type= "text" id= "phone">
+            </div>            
+          </fieldset>
+      </form>
+       <div id="my-order">
+          <div id="my-order-top">
+              <p>My Order</p>
+              <a href="cart.html">Edit</a>
+              <a class="continue" href="payment.html">Continue &#9654</a>
+          </div>
+          <div id="my-order-details">
+            <p>Number of items</p>
+            <p>Product Cost</p>
+            <p>Delivery</p>
+          </div>
+          <div id="my-order-total">
+            <p>Total</p>
+          </div>
+        </div>
+        <div id="form-continue">
+          <a class="continue" href="payment.html">Continue &#9654</a>
+        <div id="my-order-continue">
+          <a class="continue" href="payment.html">Continue &#9654</a>
+        </div>
+  
+      </div>
+  
+  </div>
+  
+    <footer>
+    <address>
+      <p>For more information contact
+      <a href = "mailto:info@glenwoodfurniture.ie">Glenwood email</a></p>
+        <p>All content copyright &copy; Glenwood Furniture Limited 2015</p>
+    </address>
+    </footer>
+
+
+  </div>
+</body>
+
+</html>
